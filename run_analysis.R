@@ -2,9 +2,6 @@
 library(readr)
 library(dplyr)
 
-
-#Open the files
-
 #1 Merge the test and training sets to make one data set
 cnames <- read_lines("features.txt")
 test_ID <- read_table("subject_test.txt", col_names = "ID")
@@ -51,4 +48,3 @@ names(my_subset) <- gsub("9","",names(my_subset))
 tidy_subset <- my_subset %>%
         group_by(ID,activity) %>%
         summarise_each(funs(mean)) 
-tidy_subset[1:5,1:5]
