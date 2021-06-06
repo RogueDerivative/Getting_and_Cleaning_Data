@@ -1,1 +1,11 @@
+link to data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
+
+description of the data: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
+
+My variables:
+
+cnames = the titles for every measurement taken by the original experiment
+test_ID = the list of subject ID's associated with each measurement
+test_data = the observed data values from the experiment
+test_activity = the coded values to the type of activity performed by the user
 
