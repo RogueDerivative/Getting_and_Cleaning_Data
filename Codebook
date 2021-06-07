@@ -8,4 +8,14 @@ cnames = the titles for every measurement taken by the original experiment
 test_ID = the list of subject ID's associated with each measurement
 test_data = the observed data values from the experiment
 test_activity = the coded values to the type of activity performed by the user
+train_ID = the list of subject ID's associated with each training measurement
+train_data = the data values from the training experiment
+train_activity = the coded values of the types of activity performed
+test_df = a data frame for the column bind of the test data
+train_df = a data frame for the column bind of the training data
+my_df = the row bind of test_df and train_df
+
+my_subset = selected columns from my_df containing the ID, activity and those columns with mean and standard deviation
+
+tidy_subset = a data frame of the averages for each participants activity
 
