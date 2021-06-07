@@ -1,27 +1,34 @@
+title: "tidy_data"
+author: "Nate Foulkes"
+date: "6/6/2021"
+output:
+  html_document:
+    keep_md: yes
+---
 
+## Project Description
+Tasked to format a given dataset into tidy useable data
 
-
-
-
-
+###Collection of the raw data
 link to data: https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip
 
 description of the data: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-My variables:
 
-cnames = the titles for every measurement taken by the original experiment
-test_ID = the list of subject ID's associated with each measurement
-test_data = the observed data values from the experiment
-test_activity = the coded values to the type of activity performed by the user
-train_ID = the list of subject ID's associated with each training measurement
-train_data = the data values from the training experiment
-train_activity = the coded values of the types of activity performed
-test_df = a data frame for the column bind of the test data
-train_df = a data frame for the column bind of the training data
-my_df = the row bind of test_df and train_df
+## My variables:
 
-my_subset = selected columns from my_df containing the ID, activity and those columns with mean and standard deviation
+cnames = the titles for every measurement taken by the original experiment; class = character; 561 different names of types of measurements
+test_ID = the list of subject ID's associated with each measurement; class = data frame; consists of 9 unique identifiers
+test_data = the observed data values from the experiment; class = data frame; 
+test_activity = the coded values to the type of activity performed by the user; class = data frame
+train_ID = the list of subject ID's associated with each training measurement; class = character
+train_data = the data values from the training experiment; class = data frame
+train_activity = the coded values of the types of activity performed; class = data frame
+test_df = a data frame for the column bind of the test data; class = data frame
+train_df = a data frame for the column bind of the training data; class = data frame
+my_df = the row bind of test_df and train_df; class = data frame; size = 10299 x 563
 
-tidy_subset = a data frame of the averages for each participants activity
+my_subset = selected columns from my_df containing the ID, activity and those columns with mean and standard deviation; class = data frame; size = 10299 x 88
+
+tidy_subset = a data frame of the averages for each participants activity; class = data frame; size = 180 x 88
 
